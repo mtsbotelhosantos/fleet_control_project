@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Source Sans 3', sans-serif;
+    
+  }
+
+:root{
+    --text-color: #0e438a;
+    --bk-buttons: rgb(158, 0, 0);  
+   
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+.master{
+    margin-top: 20px;
+    width: 100vw;
+    display: flex;
+    
+    /* background-color: aqua; */
+}
+.saida_entrada{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    margin: 15px;
+
+    
+}
+.info_car{
+    border: dashed 4px rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.saida{
+    border: solid 4px rgb(0, 230, 199);
+    border-radius: 5px;
+    min-width: 260px;
+}
+.entrada{
+    border: solid 4px rgb(255, 0, 64);
+    border-radius: 5px;
+}
+.miniaturas{
+    width: 50px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.tit_saida{
+    background-color: rgb(0, 230, 199);
+    font-weight: bold;
+    color: white;
+}
+.tit_entrada{
+    background-color: rgb(255, 0, 64);
+    font-weight: bold;
+    color: white;
+}
+form{
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_titulo{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+#logo{
+    width: 200px;
+}
+.titulo{
+    color: #005284;  
+    padding-left: 30px;
+    
+}
+.cabecalho, .responsavel{
+    padding: 40px 0px 40px 0px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: row;
+    
+}
+
+
+   
+
+.input_name_client>input{
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    width: 600px;
+    margin: 2px;
+    border-radius: 5px;
+    border: solid 2px var(--text-color);
+    height: 50px;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #0e438a;
+    color: white;
+   
+}
+.separador{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #0e438a;
+    margin: 30px 0px 30px 0px;
+    width: 100vw;
+    height: 5px;
+
+   
+}
+.criterio{
+    border: dotted 2px #5353538a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+    color: rgb(61, 61, 61);
+   
+}
+.avaliacao{
+    color: var(--text-color);
+    padding: 30px 10px;
+    margin: 0px 10px 10px 10px;
+}
+.avaliacao>legend{
+    padding: 40px 10px 10px 10px;
+    /* font-weight: bold; */
+    
+}
+.preenchimento{
+    display: flex;
+    flex-direction: column;
+}
+.campos>span, legend{
+    font-weight: bold;
+}
+.avaliacao>legend>span{
+    
+    font-weight: bold;
+    
+}
+
+.avaliacao>select{
+    width: 200px;
+    margin-bottom: 30px;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    background-color: #0e438a;
+}
+.avaliacao>select:hover{ 
+    background-color: #1860bf;
+}
+.avaliacao>p{
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+#comentario{
+    border-radius: 10px;
+    border: solid 2px #0e438a;
+    color: #0e438a;
+    padding: 5px;
+    font-weight: 600;
+
+}
+.input_preenchimento{
+    font-weight: 600;
+    color: #0e438a;
+}
+.responsavel_titulo{
+    color: var(--text-color);
+
+}
+.submit{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 70px;
+    background-color: rgb(12, 206, 141);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.submit:hover{
+    background-color: rgb(5, 160, 109);
+}
+.data_hora{
+    display: none;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.clickable3, .clickable4{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.ordena_quadrado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
+.selected{
+    border: dashed 6px rgb(59, 59, 59);
+      
+}
+
+.others-selected{
+        opacity: 0.5;
+}
+
+.input_cab, select{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: medium;
+    color: rgb(139, 0, 0);
+    text-transform: uppercase;
+}
+.input_colors{
+   display: none;
+}
+#text_nc_acondicionamento, #text_nc_integridade, #coc_input{
+    display: none;
+}
+.campos{
+    background-color: #c5c5c5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.preview img, .preview video{
+    max-width: 200px;
+}
+.arquivos{
+    background-color: #c5c5c5;
+    margin-top: 10px;
+    padding: 10px;
+}
+fieldset{
+    border-radius: 10px;
+    border: solid 3px #c5c5c5;
+}
+
+.select_view{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #005284;
+    align-items: start;
+}
+.span{
+    font-weight: bold;
+    color: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+.arquivos_visu{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+
+    
+}
+.arq_tit{
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+}
+@media (max-width: 600px){
+    .logo_titulo{
+        flex-direction: column;
+    }
+    .titulo{
+        padding-top: 20px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+   
+    .input_name_client>input{
+        width: 350px;
+        
+
+       
+
+        
+    }
+    .clickable3, .clickable4{
+        width: 140px;
+        height: 36px;
+        margin: 2px;
+       
+    }
+    .selected{
+        border: solid 3px rgb(59, 59, 59);
+          
+    }
+
+    
+
+   
+   
+}

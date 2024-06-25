@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Source Sans 3', sans-serif;
+    
+  }
+
+:root{
+    --text-color: #005284;
+    --bk-buttons: rgb(158, 0, 0);  
+   
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.master{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100vh;
+}
+.chose{
+    background-color: #005284;   
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chose:hover{
+    background-color: #0665a0; 
+}
+.chose>i{
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    width: 220px;
+    margin-bottom: 30px;
+}
+.exit{
+    background-color: rgb(161, 2, 2);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exit:hover{
+    background-color: rgb(204, 6, 6);
+}
+.nome{
+    font-weight: bolder;
+    color: #005284 ;
+}

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Source Sans 3', sans-serif;
+   
+    
+  }
+
+:root{
+    --text-color: #008479;
+    --bk-buttons: rgb(158, 0, 0);  
+   
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+.filtro_dia{
+    background-color: #d4d4d4;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 7px;
+    gap: 5px;
+}
+legend{
+    color: var(--text-color);
+    font-weight: bold;
+}
+.input_cab{
+    font-weight: bold;
+    font-size: large;
+    color: var(--text-color);
+    padding: 3px;
+}
+#abrir{
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #d4d4d4;
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#abrir:hover{
+    cursor: pointer;
+    background-color: #818181;
+
+}
+.master{
+    background-color: #0084799c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+}
+.tabela{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+tbody{
+    min-height: 110px;
+    text-align: center;
+    
+    
+}
+#logo{
+    width: 250px;
+}
+
+
+td{
+    padding: 10px;
+    
+}
+tbody>tr:hover{
+    background-color: rgb(206, 206, 206);
+    
+   
+}
+thead{
+    background-color: var(--text-color);
+    
+   
+}
+th{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    
+}
+.a_head{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    gap: 5px;
+    align-items: center;
+}
+.nova_saida{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+}
+
+@media (max-width: 900px){
+    .mobile{
+        display: none;
+    }
+    td{
+        word-break: break-all;
+    }
+    .master{
+        height: 1200px;
+        width: 1300px;
+        align-items:start;
+        justify-content:initial;
+        padding: 30px;
+    }
+}

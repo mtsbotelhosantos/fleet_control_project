@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Source Sans 3', sans-serif;
+    
+  }
+
+:root{
+    --text-color: #005284;
+    --bk-buttons: rgb(158, 0, 0);  
+   
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.master{
+    background-color: #005284;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 30px;
+}
+.tabela{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+tbody{
+    min-height: 110px;
+    text-align: center;
+    
+    
+}
+#logo{
+    width: 250px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+td{
+    padding: 10px;
+    
+}
+tbody>tr:hover{
+    background-color: #00518470;
+    
+   
+}
+thead{
+    background-color: #005284;
+    
+   
+}
+th{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.n_existe_dados{
+    display: none;
+}
+.existe_dados{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #005284;
+}
+.nova_saida{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 600px){
+    .mobile{
+        display: none;
+    }
+    td{
+        word-break: break-all;
+    }
+}
